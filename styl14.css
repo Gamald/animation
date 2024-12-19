@@ -1,0 +1,81 @@
+body{
+    background-color: black;
+
+}
+div{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    translate: 1200px 0;
+animation-name: x;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+animation-fill-mode: both;
+color: aliceblue;
+font-size: large;
+
+}
+@keyframes x{
+0%{
+    translate: 0 0; 
+    background-color: red;
+
+    
+}
+25%{
+    translate: 0 500px;
+    background-color: blue;
+    rotate: 60deg;
+    
+}
+50%{
+    translate: 1200px 500px;
+    background-color: aqua;
+   rotate: 90deg;
+}
+75%{
+    translate: 1200px 0;
+    background-color: chartreuse;
+    rotate: 120deg;
+    
+}
+100%{
+    translate: 0 0; 
+    background-color: brown;
+    
+}
+
+
+}
+#gmy{
+    background-color: blue;
+    animation-name: y;
+    color: aliceblue;
+    font-size: large;
+}
+@keyframes y{
+    0%{
+        background-color: aliceblue;
+        translate: 1200px 0;
+    }
+    25%{
+        background-color: brown;
+        translate: 1200px 500px;
+    }
+    50%{
+        background-color: crimson;
+        translate: 0 500px;
+    }
+    75%{
+        background-color: black;
+        animation-delay: 2s;
+    }
+}
+
+
+
+
+div:hover{
+    animation-play-state: paused;
+    cursor: pointer;
+}
